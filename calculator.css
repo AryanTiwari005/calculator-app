@@ -1,0 +1,161 @@
+/* 🌌 Existing Weather App Styles */
+body {
+    padding: 0;
+    margin-down: 0;
+    background: #222;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298, #134e5e);
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    text-align: center;
+    margin: auto;
+    padding: 20px 15px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px slateblue;
+}
+
+#btn {
+    color: white;
+    margin: 20px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border-radius: 20px;
+    margin: 20px;
+    outline: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    color: #555;
+    border: 1px solid black;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 20px;
+    padding: 10px 25px;
+}
+
+div h1 {
+    color: white;
+}
+div h2 {
+    color: white;
+    font-weight: bold;
+}
+.weather {
+    width: 100px;
+    margin-top: 120px;
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+.weather h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+.weather h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+.col2 {
+    text-decoration: ghostwhite;
+}
+div p {
+    color: white;
+}
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+/* 🔢 Calculator Styles */
+.calculator {
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 15px;
+    justify-content: center;
+}
+
+#display {
+    grid-column: span 4;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+button {
+    height: 70px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Special buttons */
+button:nth-child(2), button:nth-child(3) { /* AC, DEL */
+    color: #00ff88;
+}
+button:nth-last-child(1) { /* = button */
+    background: linear-gradient(135deg, #ff6a00, #ffcc00);
+    color: black;
+    grid-column: span 2; /* make = button larger */
+}
